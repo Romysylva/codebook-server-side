@@ -4,8 +4,8 @@ import auth from "json-server-auth";
 
 const server = express();
 server.use((req, res, next) => {
-    req.header('Access-Control-Allow-Origin', "*");
-    res.header('Access-Control-Allow-Header', "*");
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Headers', "*");
     next();
 
 })
